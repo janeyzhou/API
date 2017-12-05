@@ -1,0 +1,1293 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jmeterTestPlan version="1.2" properties="3.2" jmeter="3.3 r1808647">
+  <hashTree>
+    <TestPlan guiclass="TestPlanGui" testclass="TestPlan" testname="Test Plan" enabled="true">
+      <stringProp name="TestPlan.comments"></stringProp>
+      <boolProp name="TestPlan.functional_mode">false</boolProp>
+      <boolProp name="TestPlan.serialize_threadgroups">false</boolProp>
+      <elementProp name="TestPlan.user_defined_variables" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+        <collectionProp name="Arguments.arguments">
+          <elementProp name="TestInt" elementType="Argument">
+            <stringProp name="Argument.name">TestInt</stringProp>
+            <stringProp name="Argument.value">1111</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="TestStr" elementType="Argument">
+            <stringProp name="Argument.name">TestStr</stringProp>
+            <stringProp name="Argument.value">Hello</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+        </collectionProp>
+      </elementProp>
+      <stringProp name="TestPlan.user_define_classpath">C:\Users\Janey_Zhou\Desktop\Training\auto\API TEST\apache-jmeter-3.3\apache-jmeter-3.3\lib\ext\minimal-json-0.9.1.jar,C:\Users\Janey_Zhou\Desktop\Training\auto\API TEST\apache-jmeter-3.3\apache-jmeter-3.3\lib\ext\json-20160810.jar</stringProp>
+    </TestPlan>
+    <hashTree>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Post Processor Case" enabled="false">
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+          <stringProp name="LoopController.loops">1</stringProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.num_threads">1</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">1</stringProp>
+        <longProp name="ThreadGroup.start_time">1508832590000</longProp>
+        <longProp name="ThreadGroup.end_time">1508832590000</longProp>
+        <boolProp name="ThreadGroup.scheduler">false</boolProp>
+        <stringProp name="ThreadGroup.duration"></stringProp>
+        <stringProp name="ThreadGroup.delay"></stringProp>
+      </ThreadGroup>
+      <hashTree>
+        <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+          <collectionProp name="HeaderManager.headers">
+            <elementProp name="" elementType="Header">
+              <stringProp name="Header.name">Authorization</stringProp>
+              <stringProp name="Header.value">X-WPCOOKIE 9706d7262876f6811c0880616a94faa6:1:https://wordpress.com</stringProp>
+            </elementProp>
+          </collectionProp>
+        </HeaderManager>
+        <hashTree/>
+        <CookieManager guiclass="CookiePanel" testclass="CookieManager" testname="HTTP Cookie Manager" enabled="true">
+          <collectionProp name="CookieManager.cookies">
+            <elementProp name="cookie" elementType="Cookie" testname="cookie">
+              <stringProp name="Cookie.value">__qca=P0-1187820277-1504862993270; G_ENABLED_IDPS=google; _wpndash=9f71fcfe5b0b03ee5751e2ba; __ssid=d3a414e0-2ba7-4867-b2f8-7b1ea18954c3; _ym_uid=1505811048387258240; _ym_isad=2; wordpress_eli=1; wordpress_test_cookie=WP+Cookie+check; wordpress_logged_in=janeyzhou%7C1602928695%7C0On9f8CevDXBcuPqpRElF4u8P26cLNJox9l1oiEWMao%7Cf9fcbba784a28efb6878957c203372779936c2041efd72c044672fc0aa482f0b; wp_api_sec=janeyzhou%7C1602928695%7C0On9f8CevDXBcuPqpRElF4u8P26cLNJox9l1oiEWMao%7C08406e9eaf4133d9467ac0e36e0e55939d92f9f9d3162aef46792d38a8b47d7a; tk_tc=1508320697330; _ga=GA1.2.1339292131.1504862992; _gid=GA1.2.546058623.1508318317; wpc_wpc=account=janeyzhou&amp;avatar=https%3A%2F%2F2.gravatar.com%2Favatar%2F89c894bbf61f508fe145f3af83986ba3%3Fs%3D25%26amp%3Bd%3Dhttps%253A%252F%252Fs2.wp.com%252Fwp-content%252Fmu-plugins%252Fhighlander-comments%252Fimages%252Fwplogo.png&amp;email=wuyinhu0311%40163.com&amp;link=http%3A%2F%2Fresttestdotblog.wordpress.com&amp;name=janeyzhou&amp;uid=127559744&amp;access_token=3c64c6abb5ca0a19da3ed53461caa291188b0364; _gat=1; tk_qs=context%3Dpublish%26environment%3Dproduction%26site_count%3D1%26site_id_label%3Dwpcom%26client%3Dbrowser%26blog_id%3D135349986%26blog_lang%3Dundefined%26site_plan_id%3D1%26site_post_count%3Dundefined%26_en%3Dcalypso_editor_confirmation_sidebar_close%26_ui%3D127559744%26_ut%3Dwpcom%253Auser_id%26_ul%3Djaneyzhou%26_ts%3D1508379848338%26_tz%3D-8%26_lg%3Dzh-CN%26_pf%3DWin32%26_ht%3D1080%26_wd%3D1920%26_sx%3D0%26_sy%3D0%26_dl%3Dhttps%253A%252F%252Fwordpress.com%252Fpage%252Fresttestdotblog.wordpress.com%252F196%26_dr%3Dhttps%253A%252F%252Fwordpress.com%252F%20post_id%3D196%26post_type%3Dpage%26visibility%3Dpublic%26current_status%3Ddraft%26next_status%3Dpublish%26context%3Dconfirmation_sidebar%26environment%3Dproduction%26site_count%3D1%26site_id_label%3Dwpcom%26client%3Dbrowser%26blog_id%3D135349986%26blog_lang%3Dundefined%26site_plan_id%3D1%26site_post_count%3Dundefined%26_en%3Dcalypso_editor_page_publish%26_ui%3D127559744%26_ut%3Dwpcom%253Auser_id%26_ul%3Djaneyzhou%26_ts%3D1508379848344%26_tz%3D-8%26_lg%3Dzh-CN%26_pf%3DWin32%26_ht%3D1080%26_wd%3D1920%26_sx%3D0%26_sy%3D0%26_dl%3Dhttps%253A%252F%252Fwordpress.com%252Fpage%252Fresttestdotblog.wordpress.com%252F196%26_dr%3Dhttps%253A%252F%252Fwordpress.com%252F</stringProp>
+              <stringProp name="Cookie.domain">public-api.wordpress.com</stringProp>
+              <stringProp name="Cookie.path"></stringProp>
+              <boolProp name="Cookie.secure">true</boolProp>
+              <longProp name="Cookie.expires">0</longProp>
+              <boolProp name="Cookie.path_specified">true</boolProp>
+              <boolProp name="Cookie.domain_specified">true</boolProp>
+            </elementProp>
+          </collectionProp>
+          <boolProp name="CookieManager.clearEachIteration">false</boolProp>
+        </CookieManager>
+        <hashTree/>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Get Lasted Draft Site List" enabled="true">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+            <collectionProp name="Arguments.arguments"/>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">public-api.wordpress.com</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol">https</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">/rest/v1.1/sites/135349986/posts?http_envelope=1&amp;page=1&amp;number=20&amp;search=&amp;status=draft%2Cpending&amp;type=page</stringProp>
+          <stringProp name="HTTPSampler.method">GET</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <com.atlantbh.jmeter.plugins.jsonutils.jsonpathextractor.JSONPathExtractor guiclass="com.atlantbh.jmeter.plugins.jsonutils.jsonpathextractor.gui.JSONPathExtractorGui" testclass="com.atlantbh.jmeter.plugins.jsonutils.jsonpathextractor.JSONPathExtractor" testname="jp@gc - JSON Path Extractor - PostProcessor" enabled="false">
+            <stringProp name="VAR">Draft_Lasted_ID</stringProp>
+            <stringProp name="JSONPATH">$.body.posts[0].ID</stringProp>
+            <stringProp name="DEFAULT"></stringProp>
+            <stringProp name="VARIABLE"></stringProp>
+            <stringProp name="SUBJECT">BODY</stringProp>
+          </com.atlantbh.jmeter.plugins.jsonutils.jsonpathextractor.JSONPathExtractor>
+          <hashTree/>
+          <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="JSON Extractor - PostProcessor" enabled="false">
+            <stringProp name="JSONPostProcessor.referenceNames">Draft_Lasted_ID</stringProp>
+            <stringProp name="JSONPostProcessor.jsonPathExprs">$.body.posts[0].ID</stringProp>
+            <stringProp name="JSONPostProcessor.match_numbers"></stringProp>
+          </JSONPostProcessor>
+          <hashTree/>
+          <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="Regular Expression Extractor - PostProcessor" enabled="false">
+            <stringProp name="RegexExtractor.useHeaders">false</stringProp>
+            <stringProp name="RegexExtractor.refname">Draft_Lasted_ID</stringProp>
+            <stringProp name="RegexExtractor.regex">&quot;ID&quot;:([^,]+)</stringProp>
+            <stringProp name="RegexExtractor.template">$1$</stringProp>
+            <stringProp name="RegexExtractor.default"></stringProp>
+            <stringProp name="RegexExtractor.match_number">1</stringProp>
+          </RegexExtractor>
+          <hashTree/>
+          <JSR223PostProcessor guiclass="TestBeanGUI" testclass="JSR223PostProcessor" testname="JSR223 -Groovy - PostProcessor" enabled="true">
+            <stringProp name="scriptLanguage">groovy</stringProp>
+            <stringProp name="parameters"></stringProp>
+            <stringProp name="filename"></stringProp>
+            <stringProp name="cacheKey"></stringProp>
+            <stringProp name="script">import groovy.json.JsonSlurper;
+
+def response = prev.getResponseDataAsString();
+log.info(&quot;+++++++++response---&quot; + response);
+
+def json_data = new JsonSlurper().parseText(response);
+log.info(&quot;+++++++++json_data---&quot; + json_data);
+
+def firstID = json_data.body.posts[0].ID;
+log.info(&quot;+++++++++firstID---&quot; + firstID);
+
+vars.put(&quot;Draft_Lasted_ID&quot;, firstID.toString());
+
+
+</stringProp>
+          </JSR223PostProcessor>
+          <hashTree/>
+          <BeanShellPostProcessor guiclass="TestBeanGUI" testclass="BeanShellPostProcessor" testname="BeanShell - minimal json - PostProcessor" enabled="false">
+            <boolProp name="resetInterpreter">false</boolProp>
+            <stringProp name="parameters"></stringProp>
+            <stringProp name="filename"></stringProp>
+            <stringProp name="script">import com.eclipsesource.json.*;
+try{
+	
+	String response_data = prev.getResponseDataAsString();  //获取请求返回值，返回类型为string
+	log.info(&quot;string+++++++++++++++&quot; + response_data);
+	
+	JsonObject data_obj = JsonObject.readFrom(response_data);	//将string类型转换成java的JSONObject对象
+	log.info(&quot;jsonobjec---Response+++++++++++++++&quot; +data_obj);
+
+	JsonArray posts = data_obj.get(&quot;body&quot;).get(&quot;posts&quot;).asArray();
+	String firstID = posts.get(0).asObject().get(&quot;ID&quot;).toString();
+	log.info(&quot;string---ID+++++++++++++++&quot; +firstID);
+	
+	/*
+	String post_data = data_obj.get(&quot;body&quot;).toString();
+	log.info(&quot;jsonobject---Posts+++++++++++++++&quot; +post_data);
+
+	JsonObject body = JsonObject.readFrom(post_data);
+	log.info(&quot;jsonoArray---Posts+++++++++++++++&quot; +body);
+
+	JsonArray posts = body.get(&quot;posts&quot;).asArray();
+	String firstID = posts.get(0).asObject().get(&quot;ID&quot;).toString();
+	log.info(&quot;string---ID+++++++++++++++&quot; +firstID);
+*/
+	vars.put(&quot;Draft_Lasted_ID&quot;, firstID);
+	
+
+}
+catch(Throwable e){
+	log.error(&quot;***Failed to Parse Json***&quot;, e);
+	throw e;
+}
+
+
+
+
+
+</stringProp>
+          </BeanShellPostProcessor>
+          <hashTree/>
+          <XPathExtractor guiclass="XPathExtractorGui" testclass="XPathExtractor" testname="XPath Extractor - PostProcessor" enabled="false">
+            <stringProp name="XPathExtractor.default"></stringProp>
+            <stringProp name="XPathExtractor.refname"></stringProp>
+            <stringProp name="XPathExtractor.matchNumber">-1</stringProp>
+            <stringProp name="XPathExtractor.xpathQuery"></stringProp>
+            <boolProp name="XPathExtractor.validate">false</boolProp>
+            <boolProp name="XPathExtractor.tolerant">false</boolProp>
+            <boolProp name="XPathExtractor.namespace">false</boolProp>
+          </XPathExtractor>
+          <hashTree/>
+          <BeanShellPostProcessor guiclass="TestBeanGUI" testclass="BeanShellPostProcessor" testname="BeanShell - Json in Java - PostProcessor" enabled="false">
+            <boolProp name="resetInterpreter">false</boolProp>
+            <stringProp name="parameters"></stringProp>
+            <stringProp name="filename"></stringProp>
+            <stringProp name="script">import org.json.*;
+try{
+
+String response_data = prev.getResponseDataAsString();
+log.info(&quot;+++++++++response_data---&quot; + response_data);
+
+JSONObject data_obj = new JSONObject(response_data);
+log.info(&quot;+++++++++data_obj---&quot; + data_obj);
+//遇到{}取数据用getJSONObject, 遇到[]取数据用getJSONArray
+JSONArray data_array = data_obj.getJSONObject(&quot;body&quot;).getJSONArray(&quot;posts&quot;);
+log.info(&quot;+++++++++data_array---&quot; + data_array);
+
+//从JSONArray中取数据的时候，遇到{}也要用getJSONObject
+JSONObject one_post = data_array.getJSONObject(0);
+log.info(&quot;+++++++++one_post---&quot; + one_post);
+
+//取值的时候直接用get，不知道为什么getString()方法不行
+String firstID = one_post.get(&quot;ID&quot;).toString();
+log.info(&quot;+++++++++firstID---&quot; + firstID);
+
+vars.put(&quot;Draft_Lasted_ID&quot;, firstID);
+
+
+}
+catch(Throwable e){
+	log.error(&quot;***Failed***&quot;, e);
+	throw e;
+}
+</stringProp>
+          </BeanShellPostProcessor>
+          <hashTree/>
+          <DebugPostProcessor guiclass="TestBeanGUI" testclass="DebugPostProcessor" testname="Debug PostProcessor" enabled="true">
+            <boolProp name="displayJMeterProperties">false</boolProp>
+            <boolProp name="displayJMeterVariables">true</boolProp>
+            <boolProp name="displaySamplerProperties">true</boolProp>
+            <boolProp name="displaySystemProperties">false</boolProp>
+          </DebugPostProcessor>
+          <hashTree/>
+        </hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Delete Latest Draft Site" enabled="true">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value"></stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">public-api.wordpress.com</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol">HTTPS</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">/rest/v1.1/sites/135349986/posts/${Draft_Lasted_ID}/delete?http_envelope=1</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <DebugPostProcessor guiclass="TestBeanGUI" testclass="DebugPostProcessor" testname="Debug PostProcessor" enabled="true">
+            <boolProp name="displayJMeterProperties">false</boolProp>
+            <boolProp name="displayJMeterVariables">true</boolProp>
+            <boolProp name="displaySamplerProperties">true</boolProp>
+            <boolProp name="displaySystemProperties">false</boolProp>
+          </DebugPostProcessor>
+          <hashTree/>
+        </hashTree>
+        <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
+          <boolProp name="ResultCollector.error_logging">false</boolProp>
+          <objProp>
+            <name>saveConfig</name>
+            <value class="SampleSaveConfiguration">
+              <time>true</time>
+              <latency>true</latency>
+              <timestamp>true</timestamp>
+              <success>true</success>
+              <label>true</label>
+              <code>true</code>
+              <message>true</message>
+              <threadName>true</threadName>
+              <dataType>true</dataType>
+              <encoding>false</encoding>
+              <assertions>true</assertions>
+              <subresults>true</subresults>
+              <responseData>false</responseData>
+              <samplerData>false</samplerData>
+              <xml>false</xml>
+              <fieldNames>true</fieldNames>
+              <responseHeaders>false</responseHeaders>
+              <requestHeaders>false</requestHeaders>
+              <responseDataOnError>false</responseDataOnError>
+              <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+              <assertionsResultsToSave>0</assertionsResultsToSave>
+              <bytes>true</bytes>
+              <sentBytes>true</sentBytes>
+              <threadCounts>true</threadCounts>
+              <idleTime>true</idleTime>
+              <connectTime>true</connectTime>
+            </value>
+          </objProp>
+          <stringProp name="filename"></stringProp>
+        </ResultCollector>
+        <hashTree/>
+        <ResultCollector guiclass="AssertionVisualizer" testclass="ResultCollector" testname="Assertion Results" enabled="true">
+          <boolProp name="ResultCollector.error_logging">false</boolProp>
+          <objProp>
+            <name>saveConfig</name>
+            <value class="SampleSaveConfiguration">
+              <time>true</time>
+              <latency>true</latency>
+              <timestamp>true</timestamp>
+              <success>true</success>
+              <label>true</label>
+              <code>true</code>
+              <message>true</message>
+              <threadName>true</threadName>
+              <dataType>true</dataType>
+              <encoding>false</encoding>
+              <assertions>true</assertions>
+              <subresults>true</subresults>
+              <responseData>false</responseData>
+              <samplerData>false</samplerData>
+              <xml>false</xml>
+              <fieldNames>true</fieldNames>
+              <responseHeaders>false</responseHeaders>
+              <requestHeaders>false</requestHeaders>
+              <responseDataOnError>false</responseDataOnError>
+              <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+              <assertionsResultsToSave>0</assertionsResultsToSave>
+              <bytes>true</bytes>
+              <sentBytes>true</sentBytes>
+              <threadCounts>true</threadCounts>
+              <idleTime>true</idleTime>
+              <connectTime>true</connectTime>
+            </value>
+          </objProp>
+          <stringProp name="filename"></stringProp>
+        </ResultCollector>
+        <hashTree/>
+      </hashTree>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="BeanShell Case" enabled="false">
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+          <stringProp name="LoopController.loops">1</stringProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.num_threads">1</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">1</stringProp>
+        <longProp name="ThreadGroup.start_time">1509675589000</longProp>
+        <longProp name="ThreadGroup.end_time">1509675589000</longProp>
+        <boolProp name="ThreadGroup.scheduler">false</boolProp>
+        <stringProp name="ThreadGroup.duration"></stringProp>
+        <stringProp name="ThreadGroup.delay"></stringProp>
+      </ThreadGroup>
+      <hashTree>
+        <UserParameters guiclass="UserParametersGui" testclass="UserParameters" testname="User Parameters" enabled="true">
+          <collectionProp name="UserParameters.names">
+            <stringProp name="3556498">test</stringProp>
+            <stringProp name="3676">u1</stringProp>
+            <stringProp name="3677">u2</stringProp>
+            <stringProp name="3678">u3</stringProp>
+            <stringProp name="0"></stringProp>
+            <stringProp name="0"></stringProp>
+          </collectionProp>
+          <collectionProp name="UserParameters.thread_values">
+            <collectionProp name="-418658273">
+              <stringProp name="1450575459">123456</stringProp>
+              <stringProp name="49">1</stringProp>
+              <stringProp name="50">2</stringProp>
+              <stringProp name="51">3</stringProp>
+              <stringProp name="0"></stringProp>
+              <stringProp name="0"></stringProp>
+            </collectionProp>
+          </collectionProp>
+          <boolProp name="UserParameters.per_iteration">false</boolProp>
+        </UserParameters>
+        <hashTree/>
+        <DebugSampler guiclass="TestBeanGUI" testclass="DebugSampler" testname="Debug Sampler - 1" enabled="true">
+          <boolProp name="displayJMeterProperties">false</boolProp>
+          <boolProp name="displayJMeterVariables">true</boolProp>
+          <boolProp name="displaySystemProperties">false</boolProp>
+        </DebugSampler>
+        <hashTree/>
+        <BeanShellSampler guiclass="BeanShellSamplerGui" testclass="BeanShellSampler" testname="BeanShell Sampler" enabled="true">
+          <stringProp name="BeanShellSampler.query">
+public static String test() {
+	try{
+	//change the value of variable
+	vars.put(&quot;TestInt&quot;, &quot;222&quot;);
+	vars.put(&quot;TestStr&quot;, &quot;Hello World&quot;); 
+	
+	//get the value of variable, and set this value to other variable
+	String a = vars.get(&quot;TestInt&quot;);
+	String b = vars.get(&quot;TestStr&quot;);
+	//String 与 int间的切换
+	//int aINT = Integer.parseInt(vars.get(&quot;TestInt&quot;));
+	int c = Integer.valueOf(vars.get(&quot;TestInt&quot;));
+	vars.put(&quot;v1&quot;, a);
+	vars.put(&quot;v2&quot;, b);
+	vars.put(&quot;v3&quot;, (c+3).toString());
+
+	//Set one variable to the value of user Parameters
+	String d = vars.get(&quot;test&quot;);
+	vars.put(&quot;v4&quot;, d);
+
+	return &quot;success&quot;;
+		
+	}
+	catch (Throwable e){
+		log.error(&quot;failed&quot;, e);
+		throw e;
+	}
+}
+
+test();
+	
+
+</stringProp>
+          <stringProp name="BeanShellSampler.filename"></stringProp>
+          <stringProp name="BeanShellSampler.parameters"></stringProp>
+          <boolProp name="BeanShellSampler.resetInterpreter">false</boolProp>
+        </BeanShellSampler>
+        <hashTree/>
+        <BeanShellSampler guiclass="BeanShellSamplerGui" testclass="BeanShellSampler" testname="BeanShell Sampler - import java file" enabled="true">
+          <stringProp name="BeanShellSampler.query">try{
+	//import java file
+	source(&quot;C:/Users/Janey_Zhou/eclipse-workspace/BeanShellTest/src/Test/Add.java&quot;);
+	int addResult = new Add().add(1,2);
+	//get, put only accept String
+	vars.put(&quot;addJavaFile&quot;, addResult.toString());
+	
+	//call the parameter from other sampler
+	int str = Integer.valueOf(${v4});
+	log.info(str.toString());
+
+	//get value from parameter array
+	vars.put(&quot;p1&quot;, bsh.args[0]);
+	vars.put(&quot;p2&quot;, bsh.args[1]);
+	vars.put(&quot;p3&quot;, bsh.args[2]);
+
+	//print Parameters
+	vars.put(&quot;p4&quot;, Parameters);
+	log.info(Parameters);
+
+}
+catch(Throwable e){
+	log.error(&quot;failed&quot;, e);
+	throw e;
+}
+
+
+
+
+</stringProp>
+          <stringProp name="BeanShellSampler.filename"></stringProp>
+          <stringProp name="BeanShellSampler.parameters">${u1} ${u2} ${u3}</stringProp>
+          <boolProp name="BeanShellSampler.resetInterpreter">false</boolProp>
+        </BeanShellSampler>
+        <hashTree/>
+        <BeanShellSampler guiclass="BeanShellSamplerGui" testclass="BeanShellSampler" testname="BeanShell Sampler - import jar file" enabled="false">
+          <stringProp name="BeanShellSampler.query">addClassPath(&quot;C:\\Users\\Janey_Zhou\\eclipse-workspace\\BeanShellTest\\bin\\Test\\Add.class&quot;);
+
+import Test.Add;
+
+	int addResult = new Add().add(1,4);
+
+	vars.put(&quot;addClassFile&quot;, addResult.toString());
+</stringProp>
+          <stringProp name="BeanShellSampler.filename"></stringProp>
+          <stringProp name="BeanShellSampler.parameters"></stringProp>
+          <boolProp name="BeanShellSampler.resetInterpreter">false</boolProp>
+        </BeanShellSampler>
+        <hashTree/>
+        <DebugSampler guiclass="TestBeanGUI" testclass="DebugSampler" testname="Debug Sampler - 2" enabled="true">
+          <boolProp name="displayJMeterProperties">false</boolProp>
+          <boolProp name="displayJMeterVariables">true</boolProp>
+          <boolProp name="displaySystemProperties">false</boolProp>
+        </DebugSampler>
+        <hashTree/>
+        <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
+          <boolProp name="ResultCollector.error_logging">false</boolProp>
+          <objProp>
+            <name>saveConfig</name>
+            <value class="SampleSaveConfiguration">
+              <time>true</time>
+              <latency>true</latency>
+              <timestamp>true</timestamp>
+              <success>true</success>
+              <label>true</label>
+              <code>true</code>
+              <message>true</message>
+              <threadName>true</threadName>
+              <dataType>true</dataType>
+              <encoding>false</encoding>
+              <assertions>true</assertions>
+              <subresults>true</subresults>
+              <responseData>false</responseData>
+              <samplerData>false</samplerData>
+              <xml>false</xml>
+              <fieldNames>true</fieldNames>
+              <responseHeaders>false</responseHeaders>
+              <requestHeaders>false</requestHeaders>
+              <responseDataOnError>false</responseDataOnError>
+              <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+              <assertionsResultsToSave>0</assertionsResultsToSave>
+              <bytes>true</bytes>
+              <sentBytes>true</sentBytes>
+              <threadCounts>true</threadCounts>
+              <idleTime>true</idleTime>
+              <connectTime>true</connectTime>
+            </value>
+          </objProp>
+          <stringProp name="filename"></stringProp>
+        </ResultCollector>
+        <hashTree/>
+      </hashTree>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Assertion Case" enabled="false">
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+          <stringProp name="LoopController.loops">1</stringProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.num_threads">1</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">1</stringProp>
+        <longProp name="ThreadGroup.start_time">1508832590000</longProp>
+        <longProp name="ThreadGroup.end_time">1508832590000</longProp>
+        <boolProp name="ThreadGroup.scheduler">false</boolProp>
+        <stringProp name="ThreadGroup.duration"></stringProp>
+        <stringProp name="ThreadGroup.delay"></stringProp>
+      </ThreadGroup>
+      <hashTree>
+        <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+          <collectionProp name="HeaderManager.headers">
+            <elementProp name="" elementType="Header">
+              <stringProp name="Header.name">Authorization</stringProp>
+              <stringProp name="Header.value">X-WPCOOKIE 9706d7262876f6811c0880616a94faa6:1:https://wordpress.com</stringProp>
+            </elementProp>
+          </collectionProp>
+        </HeaderManager>
+        <hashTree/>
+        <CookieManager guiclass="CookiePanel" testclass="CookieManager" testname="HTTP Cookie Manager" enabled="true">
+          <collectionProp name="CookieManager.cookies">
+            <elementProp name="cookie" elementType="Cookie" testname="cookie">
+              <stringProp name="Cookie.value">__qca=P0-1187820277-1504862993270; G_ENABLED_IDPS=google; _wpndash=9f71fcfe5b0b03ee5751e2ba; __ssid=d3a414e0-2ba7-4867-b2f8-7b1ea18954c3; _ym_uid=1505811048387258240; _ym_isad=2; wordpress_eli=1; wordpress_test_cookie=WP+Cookie+check; wordpress_logged_in=janeyzhou%7C1602928695%7C0On9f8CevDXBcuPqpRElF4u8P26cLNJox9l1oiEWMao%7Cf9fcbba784a28efb6878957c203372779936c2041efd72c044672fc0aa482f0b; wp_api_sec=janeyzhou%7C1602928695%7C0On9f8CevDXBcuPqpRElF4u8P26cLNJox9l1oiEWMao%7C08406e9eaf4133d9467ac0e36e0e55939d92f9f9d3162aef46792d38a8b47d7a; tk_tc=1508320697330; _ga=GA1.2.1339292131.1504862992; _gid=GA1.2.546058623.1508318317; wpc_wpc=account=janeyzhou&amp;avatar=https%3A%2F%2F2.gravatar.com%2Favatar%2F89c894bbf61f508fe145f3af83986ba3%3Fs%3D25%26amp%3Bd%3Dhttps%253A%252F%252Fs2.wp.com%252Fwp-content%252Fmu-plugins%252Fhighlander-comments%252Fimages%252Fwplogo.png&amp;email=wuyinhu0311%40163.com&amp;link=http%3A%2F%2Fresttestdotblog.wordpress.com&amp;name=janeyzhou&amp;uid=127559744&amp;access_token=3c64c6abb5ca0a19da3ed53461caa291188b0364; _gat=1; tk_qs=context%3Dpublish%26environment%3Dproduction%26site_count%3D1%26site_id_label%3Dwpcom%26client%3Dbrowser%26blog_id%3D135349986%26blog_lang%3Dundefined%26site_plan_id%3D1%26site_post_count%3Dundefined%26_en%3Dcalypso_editor_confirmation_sidebar_close%26_ui%3D127559744%26_ut%3Dwpcom%253Auser_id%26_ul%3Djaneyzhou%26_ts%3D1508379848338%26_tz%3D-8%26_lg%3Dzh-CN%26_pf%3DWin32%26_ht%3D1080%26_wd%3D1920%26_sx%3D0%26_sy%3D0%26_dl%3Dhttps%253A%252F%252Fwordpress.com%252Fpage%252Fresttestdotblog.wordpress.com%252F196%26_dr%3Dhttps%253A%252F%252Fwordpress.com%252F%20post_id%3D196%26post_type%3Dpage%26visibility%3Dpublic%26current_status%3Ddraft%26next_status%3Dpublish%26context%3Dconfirmation_sidebar%26environment%3Dproduction%26site_count%3D1%26site_id_label%3Dwpcom%26client%3Dbrowser%26blog_id%3D135349986%26blog_lang%3Dundefined%26site_plan_id%3D1%26site_post_count%3Dundefined%26_en%3Dcalypso_editor_page_publish%26_ui%3D127559744%26_ut%3Dwpcom%253Auser_id%26_ul%3Djaneyzhou%26_ts%3D1508379848344%26_tz%3D-8%26_lg%3Dzh-CN%26_pf%3DWin32%26_ht%3D1080%26_wd%3D1920%26_sx%3D0%26_sy%3D0%26_dl%3Dhttps%253A%252F%252Fwordpress.com%252Fpage%252Fresttestdotblog.wordpress.com%252F196%26_dr%3Dhttps%253A%252F%252Fwordpress.com%252F</stringProp>
+              <stringProp name="Cookie.domain">public-api.wordpress.com</stringProp>
+              <stringProp name="Cookie.path"></stringProp>
+              <boolProp name="Cookie.secure">true</boolProp>
+              <longProp name="Cookie.expires">0</longProp>
+              <boolProp name="Cookie.path_specified">true</boolProp>
+              <boolProp name="Cookie.domain_specified">true</boolProp>
+            </elementProp>
+          </collectionProp>
+          <boolProp name="CookieManager.clearEachIteration">false</boolProp>
+        </CookieManager>
+        <hashTree/>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Add New Draft Site Page" enabled="true">
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">site_ID=135349986&amp;status=draft&amp;type=page&amp;content=add+new+site+page&amp;title=API+TEST&amp;parent_id=&amp;page_template=</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">public-api.wordpress.com</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol">https</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">/rest/v1.2/sites/135349986/posts/new?http_envelope=1&amp;context=edit</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <JSR223PostProcessor guiclass="TestBeanGUI" testclass="JSR223PostProcessor" testname="JSR223 PostProcessor - get new site ID" enabled="true">
+            <stringProp name="scriptLanguage">groovy</stringProp>
+            <stringProp name="parameters"></stringProp>
+            <stringProp name="filename"></stringProp>
+            <stringProp name="cacheKey"></stringProp>
+            <stringProp name="script">import groovy.json.JsonSlurper;
+
+def response = prev.getResponseDataAsString();
+log.info(&quot;***&quot; + response);
+
+def json_data = new JsonSlurper().parseText(response);
+log.info(&quot;***&quot; + json_data);
+
+def newID = json_data.body.ID;
+log.info(&quot;***&quot; + newID.toString());
+
+vars.put(&quot;new_ID&quot;, newID.toString());
+
+</stringProp>
+          </JSR223PostProcessor>
+          <hashTree/>
+        </hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Get Latest Draft List" enabled="true">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+            <collectionProp name="Arguments.arguments"/>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">public-api.wordpress.com</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol">https</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">/rest/v1.1/sites/135349986/posts?http_envelope=1&amp;page=1&amp;number=20&amp;search=&amp;status=draft%2Cpending&amp;type=page</stringProp>
+          <stringProp name="HTTPSampler.method">GET</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <JSR223Assertion guiclass="TestBeanGUI" testclass="JSR223Assertion" testname="JSR223 Assertion - check new site exist in draf list" enabled="false">
+            <stringProp name="cacheKey"></stringProp>
+            <stringProp name="filename"></stringProp>
+            <stringProp name="parameters">&quot;janey&quot; &quot;li&quot; rena</stringProp>
+            <stringProp name="script">import groovy.json.JsonSlurper;
+
+def response = prev.getResponseDataAsString();
+//log.info(&quot;***&quot; + response);
+
+def json_data = new JsonSlurper().parseText(response);
+//log.info(&quot;***&quot; + json_data);
+
+def all_posts = json_data.body.posts;
+//log.info(&quot;***&quot; + all_posts);
+
+def posts_amount = all_posts.size();
+log.info(&quot;***&quot; + posts_amount);
+log.info(&quot;***&quot; + ${new_ID});
+
+
+def newIDExist = false;
+for(int i = 0; i&lt; posts_amount; i++){
+	if(all_posts[i].ID == ${new_ID}){
+		newIDExist = true;
+	}	
+}
+
+if(newIDExist == false){
+	AssertionResult.setFailureMessage(&quot;FAILED: the new id DOES NOT EXIST in draft list&quot;);
+	AssertionResult.setFailure(true);
+}
+
+/*
+
+//ctx variable
+log.info(ctx.getPreviousSampler().toString());
+log.info(ctx.getCurrentSampler().toString());
+log.info(ctx.getPreviousResult().toString());
+log.info(ctx.isRecording().toString());
+
+//log to print to console; OUT to print to command terminal
+//log.info(); log.error(); log.debug(); log.warn();
+//OOUT(); OUT.println();
+
+//Parameters and args variable
+log.info(Parameters);
+log.info(args[1]);
+
+//props variable
+log.info(props.get(&quot;START.HMS&quot;));
+
+
+//AssertionResult variable
+log.info(&quot;+++++AssertionFailureMessage+++++&quot; + AssertionResult.getFailureMessage());
+log.info(&quot;+++++AssertionFailureMessage+++++&quot; + AssertionResult.isFailure());
+
+//SampleResult, prev variable----SampleResult=prev
+log.info(&quot;+++++ContentType+++++&quot; + SampleResult.getContentType());
+log.info(&quot;+++++ContentType+++++&quot; + prev.getContentType());
+log.info(&quot;+++++DataType+++++&quot; + prev.getDataType());
+log.info(&quot;+++++RequestHeaders+++++&quot; + prev.getRequestHeaders());
+log.info(&quot;+++++ResponseCode+++++&quot; + prev.getResponseCode());
+log.info(&quot;+++++ResponseHeaders+++++&quot; + prev.getResponseHeaders());
+log.info(&quot;+++++ResponseMessage+++++&quot; + prev.getResponseMessage());
+log.info(&quot;+++++URL+++++&quot; + prev.getURL().toString());
+log.info(&quot;+++++isSuccessful+++++&quot; + prev.isSuccessful().toString());
+//prev.addAssertionResult(AssertionRestult.setFailure(&quot;failed.....&quot;));
+//removeAssertionResults()
+//setSuccessful(boolean success)
+*/</stringProp>
+            <stringProp name="scriptLanguage">groovy</stringProp>
+          </JSR223Assertion>
+          <hashTree/>
+          <BeanShellAssertion guiclass="BeanShellAssertionGui" testclass="BeanShellAssertion" testname="BeanShell Assertion - check new site exist in draf list" enabled="false">
+            <stringProp name="BeanShellAssertion.query">import org.json.*;
+try{
+
+String response = prev.getResponseDataAsString();
+
+JSONObject json_data = new JSONObject(response);
+
+JSONArray json_array = json_data.getJSONObject(&quot;body&quot;).getJSONArray(&quot;posts&quot;);
+
+int post_amount = json_array.length();
+log.info(&quot;+++++post amount+++++&quot; + post_amount);
+boolean newIDExist = false;
+
+for(int i = 0; i &lt; post_amount; i++){
+	if(json_array.getJSONObject(i).get(&quot;ID&quot;) == ${new_ID}){
+		newIDExist = true;
+	}
+	log.info(&quot;+++++newIDExist+++++&quot; + newIDExist);
+}
+
+if(newIDExist == false){
+	Failure = true;
+	FailureMessage = &quot;the new site DOES NOT EXIST on draft list&quot;;
+}
+
+log.info(&quot;+++++ResponseCode+++++&quot; + ResponseCode);
+
+}
+catch(Throwable e){
+	log.error(&quot;+++++Failed +++++&quot;, e);
+	throw e;
+}
+
+
+</stringProp>
+            <stringProp name="BeanShellAssertion.filename"></stringProp>
+            <stringProp name="BeanShellAssertion.parameters"></stringProp>
+            <boolProp name="BeanShellAssertion.resetInterpreter">false</boolProp>
+          </BeanShellAssertion>
+          <hashTree/>
+          <com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.JSONPathAssertion guiclass="com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.gui.JSONPathAssertionGui" testclass="com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.JSONPathAssertion" testname="jp@gc - JSON Path Assertion" enabled="false">
+            <stringProp name="JSON_PATH">$.body.posts[0].ID</stringProp>
+            <stringProp name="EXPECTED_VALUE">${new_ID}</stringProp>
+            <boolProp name="JSONVALIDATION">true</boolProp>
+            <boolProp name="EXPECT_NULL">false</boolProp>
+            <boolProp name="INVERT">false</boolProp>
+            <boolProp name="ISREGEX">true</boolProp>
+          </com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.JSONPathAssertion>
+          <hashTree/>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="3548">ok</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.test_field">Assertion.response_code</stringProp>
+            <boolProp name="Assertion.assume_success">false</boolProp>
+            <intProp name="Assertion.test_type">2</intProp>
+          </ResponseAssertion>
+          <hashTree/>
+        </hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Delete New Draft Site ID" enabled="true">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value"></stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">public-api.wordpress.com</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol">HTTPS</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">/rest/v1.1/sites/135349986/posts/${new_ID}/delete?http_envelope=1</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <DebugPostProcessor guiclass="TestBeanGUI" testclass="DebugPostProcessor" testname="Debug PostProcessor" enabled="true">
+            <boolProp name="displayJMeterProperties">false</boolProp>
+            <boolProp name="displayJMeterVariables">true</boolProp>
+            <boolProp name="displaySamplerProperties">true</boolProp>
+            <boolProp name="displaySystemProperties">false</boolProp>
+          </DebugPostProcessor>
+          <hashTree/>
+        </hashTree>
+        <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
+          <boolProp name="ResultCollector.error_logging">false</boolProp>
+          <objProp>
+            <name>saveConfig</name>
+            <value class="SampleSaveConfiguration">
+              <time>true</time>
+              <latency>true</latency>
+              <timestamp>true</timestamp>
+              <success>true</success>
+              <label>true</label>
+              <code>true</code>
+              <message>true</message>
+              <threadName>true</threadName>
+              <dataType>true</dataType>
+              <encoding>false</encoding>
+              <assertions>true</assertions>
+              <subresults>true</subresults>
+              <responseData>false</responseData>
+              <samplerData>false</samplerData>
+              <xml>false</xml>
+              <fieldNames>true</fieldNames>
+              <responseHeaders>false</responseHeaders>
+              <requestHeaders>false</requestHeaders>
+              <responseDataOnError>false</responseDataOnError>
+              <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+              <assertionsResultsToSave>0</assertionsResultsToSave>
+              <bytes>true</bytes>
+              <sentBytes>true</sentBytes>
+              <threadCounts>true</threadCounts>
+              <idleTime>true</idleTime>
+              <connectTime>true</connectTime>
+            </value>
+          </objProp>
+          <stringProp name="filename"></stringProp>
+        </ResultCollector>
+        <hashTree/>
+        <ResultCollector guiclass="AssertionVisualizer" testclass="ResultCollector" testname="Assertion Results" enabled="true">
+          <boolProp name="ResultCollector.error_logging">false</boolProp>
+          <objProp>
+            <name>saveConfig</name>
+            <value class="SampleSaveConfiguration">
+              <time>true</time>
+              <latency>true</latency>
+              <timestamp>true</timestamp>
+              <success>true</success>
+              <label>true</label>
+              <code>true</code>
+              <message>true</message>
+              <threadName>true</threadName>
+              <dataType>true</dataType>
+              <encoding>false</encoding>
+              <assertions>true</assertions>
+              <subresults>true</subresults>
+              <responseData>false</responseData>
+              <samplerData>false</samplerData>
+              <xml>false</xml>
+              <fieldNames>true</fieldNames>
+              <responseHeaders>false</responseHeaders>
+              <requestHeaders>false</requestHeaders>
+              <responseDataOnError>false</responseDataOnError>
+              <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+              <assertionsResultsToSave>0</assertionsResultsToSave>
+              <bytes>true</bytes>
+              <sentBytes>true</sentBytes>
+              <threadCounts>true</threadCounts>
+              <idleTime>true</idleTime>
+              <connectTime>true</connectTime>
+            </value>
+          </objProp>
+          <stringProp name="filename"></stringProp>
+        </ResultCollector>
+        <hashTree/>
+      </hashTree>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Timer Case" enabled="false">
+        <stringProp name="TestPlan.comments">Used on Performance  Test</stringProp>
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+          <stringProp name="LoopController.loops">2</stringProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.num_threads">3</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">1</stringProp>
+        <longProp name="ThreadGroup.start_time">1510639498000</longProp>
+        <longProp name="ThreadGroup.end_time">1510639498000</longProp>
+        <boolProp name="ThreadGroup.scheduler">false</boolProp>
+        <stringProp name="ThreadGroup.duration"></stringProp>
+        <stringProp name="ThreadGroup.delay"></stringProp>
+      </ThreadGroup>
+      <hashTree>
+        <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+          <collectionProp name="HeaderManager.headers">
+            <elementProp name="" elementType="Header">
+              <stringProp name="Header.name">Authorization</stringProp>
+              <stringProp name="Header.value">X-WPCOOKIE 9706d7262876f6811c0880616a94faa6:1:https://wordpress.com</stringProp>
+            </elementProp>
+          </collectionProp>
+        </HeaderManager>
+        <hashTree/>
+        <CookieManager guiclass="CookiePanel" testclass="CookieManager" testname="HTTP Cookie Manager" enabled="true">
+          <collectionProp name="CookieManager.cookies">
+            <elementProp name="cookie" elementType="Cookie" testname="cookie">
+              <stringProp name="Cookie.value">__qca=P0-1187820277-1504862993270; G_ENABLED_IDPS=google; _wpndash=9f71fcfe5b0b03ee5751e2ba; __ssid=d3a414e0-2ba7-4867-b2f8-7b1ea18954c3; _ym_uid=1505811048387258240; _ym_isad=2; wordpress_eli=1; wordpress_test_cookie=WP+Cookie+check; wordpress_logged_in=janeyzhou%7C1602928695%7C0On9f8CevDXBcuPqpRElF4u8P26cLNJox9l1oiEWMao%7Cf9fcbba784a28efb6878957c203372779936c2041efd72c044672fc0aa482f0b; wp_api_sec=janeyzhou%7C1602928695%7C0On9f8CevDXBcuPqpRElF4u8P26cLNJox9l1oiEWMao%7C08406e9eaf4133d9467ac0e36e0e55939d92f9f9d3162aef46792d38a8b47d7a; tk_tc=1508320697330; _ga=GA1.2.1339292131.1504862992; _gid=GA1.2.546058623.1508318317; wpc_wpc=account=janeyzhou&amp;avatar=https%3A%2F%2F2.gravatar.com%2Favatar%2F89c894bbf61f508fe145f3af83986ba3%3Fs%3D25%26amp%3Bd%3Dhttps%253A%252F%252Fs2.wp.com%252Fwp-content%252Fmu-plugins%252Fhighlander-comments%252Fimages%252Fwplogo.png&amp;email=wuyinhu0311%40163.com&amp;link=http%3A%2F%2Fresttestdotblog.wordpress.com&amp;name=janeyzhou&amp;uid=127559744&amp;access_token=3c64c6abb5ca0a19da3ed53461caa291188b0364; _gat=1; tk_qs=context%3Dpublish%26environment%3Dproduction%26site_count%3D1%26site_id_label%3Dwpcom%26client%3Dbrowser%26blog_id%3D135349986%26blog_lang%3Dundefined%26site_plan_id%3D1%26site_post_count%3Dundefined%26_en%3Dcalypso_editor_confirmation_sidebar_close%26_ui%3D127559744%26_ut%3Dwpcom%253Auser_id%26_ul%3Djaneyzhou%26_ts%3D1508379848338%26_tz%3D-8%26_lg%3Dzh-CN%26_pf%3DWin32%26_ht%3D1080%26_wd%3D1920%26_sx%3D0%26_sy%3D0%26_dl%3Dhttps%253A%252F%252Fwordpress.com%252Fpage%252Fresttestdotblog.wordpress.com%252F196%26_dr%3Dhttps%253A%252F%252Fwordpress.com%252F%20post_id%3D196%26post_type%3Dpage%26visibility%3Dpublic%26current_status%3Ddraft%26next_status%3Dpublish%26context%3Dconfirmation_sidebar%26environment%3Dproduction%26site_count%3D1%26site_id_label%3Dwpcom%26client%3Dbrowser%26blog_id%3D135349986%26blog_lang%3Dundefined%26site_plan_id%3D1%26site_post_count%3Dundefined%26_en%3Dcalypso_editor_page_publish%26_ui%3D127559744%26_ut%3Dwpcom%253Auser_id%26_ul%3Djaneyzhou%26_ts%3D1508379848344%26_tz%3D-8%26_lg%3Dzh-CN%26_pf%3DWin32%26_ht%3D1080%26_wd%3D1920%26_sx%3D0%26_sy%3D0%26_dl%3Dhttps%253A%252F%252Fwordpress.com%252Fpage%252Fresttestdotblog.wordpress.com%252F196%26_dr%3Dhttps%253A%252F%252Fwordpress.com%252F</stringProp>
+              <stringProp name="Cookie.domain">public-api.wordpress.com</stringProp>
+              <stringProp name="Cookie.path"></stringProp>
+              <boolProp name="Cookie.secure">true</boolProp>
+              <longProp name="Cookie.expires">0</longProp>
+              <boolProp name="Cookie.path_specified">true</boolProp>
+              <boolProp name="Cookie.domain_specified">true</boolProp>
+            </elementProp>
+          </collectionProp>
+          <boolProp name="CookieManager.clearEachIteration">false</boolProp>
+        </CookieManager>
+        <hashTree/>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Get Latest Draft List" enabled="true">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+            <collectionProp name="Arguments.arguments"/>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">public-api.wordpress.com</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol">https</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">/rest/v1.1/sites/135349986/posts?http_envelope=1&amp;page=1&amp;number=20&amp;search=&amp;status=draft%2Cpending&amp;type=page</stringProp>
+          <stringProp name="HTTPSampler.method">GET</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Constant Timer" enabled="true">
+            <stringProp name="ConstantTimer.delay">3000</stringProp>
+          </ConstantTimer>
+          <hashTree/>
+        </hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Get Latest Published List" enabled="true">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+            <collectionProp name="Arguments.arguments"/>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">public-api.wordpress.com</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol">https</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">/rest/v1.1/sites/135349986/posts?http_envelope=1&amp;page=1&amp;number=20&amp;search=&amp;status=publish%2Cprivate&amp;type=page</stringProp>
+          <stringProp name="HTTPSampler.method">GET</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree/>
+        <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
+          <boolProp name="ResultCollector.error_logging">false</boolProp>
+          <objProp>
+            <name>saveConfig</name>
+            <value class="SampleSaveConfiguration">
+              <time>true</time>
+              <latency>true</latency>
+              <timestamp>true</timestamp>
+              <success>true</success>
+              <label>true</label>
+              <code>true</code>
+              <message>true</message>
+              <threadName>true</threadName>
+              <dataType>true</dataType>
+              <encoding>false</encoding>
+              <assertions>true</assertions>
+              <subresults>true</subresults>
+              <responseData>false</responseData>
+              <samplerData>false</samplerData>
+              <xml>false</xml>
+              <fieldNames>true</fieldNames>
+              <responseHeaders>false</responseHeaders>
+              <requestHeaders>false</requestHeaders>
+              <responseDataOnError>false</responseDataOnError>
+              <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+              <assertionsResultsToSave>0</assertionsResultsToSave>
+              <bytes>true</bytes>
+              <sentBytes>true</sentBytes>
+              <threadCounts>true</threadCounts>
+              <idleTime>true</idleTime>
+              <connectTime>true</connectTime>
+            </value>
+          </objProp>
+          <stringProp name="filename"></stringProp>
+        </ResultCollector>
+        <hashTree/>
+        <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Constant Timer" enabled="true">
+          <stringProp name="ConstantTimer.delay">3000</stringProp>
+        </ConstantTimer>
+        <hashTree/>
+        <ConstantThroughputTimer guiclass="TestBeanGUI" testclass="ConstantThroughputTimer" testname="Constant Throughput Timer" enabled="true">
+          <intProp name="calcMode">0</intProp>
+          <doubleProp>
+            <name>throughput</name>
+            <value>0.0</value>
+            <savedValue>0.0</savedValue>
+          </doubleProp>
+        </ConstantThroughputTimer>
+        <hashTree/>
+      </hashTree>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Config Element Case" enabled="true">
+        <stringProp name="TestPlan.comments">Impact all elements in the scope</stringProp>
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+          <stringProp name="LoopController.loops">1</stringProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.num_threads">1</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">1</stringProp>
+        <longProp name="ThreadGroup.start_time">1510639498000</longProp>
+        <longProp name="ThreadGroup.end_time">1510639498000</longProp>
+        <boolProp name="ThreadGroup.scheduler">false</boolProp>
+        <stringProp name="ThreadGroup.duration"></stringProp>
+        <stringProp name="ThreadGroup.delay"></stringProp>
+      </ThreadGroup>
+      <hashTree>
+        <ConfigTestElement guiclass="HttpDefaultsGui" testclass="ConfigTestElement" testname="HTTP Request Defaults - Used to set host protocal and port" enabled="true">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+            <collectionProp name="Arguments.arguments"/>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">public-api.wordpress.com</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol">https</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path"></stringProp>
+          <stringProp name="HTTPSampler.concurrentPool">6</stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        </ConfigTestElement>
+        <hashTree/>
+        <AuthManager guiclass="AuthPanel" testclass="AuthManager" testname="HTTP Authorization Manager" enabled="false">
+          <collectionProp name="AuthManager.auth_list">
+            <elementProp name="" elementType="Authorization">
+              <stringProp name="Authorization.url"></stringProp>
+              <stringProp name="Authorization.username"></stringProp>
+              <stringProp name="Authorization.password"></stringProp>
+              <stringProp name="Authorization.domain"></stringProp>
+              <stringProp name="Authorization.realm"></stringProp>
+            </elementProp>
+          </collectionProp>
+        </AuthManager>
+        <hashTree/>
+        <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+          <collectionProp name="HeaderManager.headers">
+            <elementProp name="" elementType="Header">
+              <stringProp name="Header.name">Authorization</stringProp>
+              <stringProp name="Header.value">X-WPCOOKIE 9706d7262876f6811c0880616a94faa6:1:https://wordpress.com</stringProp>
+            </elementProp>
+          </collectionProp>
+        </HeaderManager>
+        <hashTree/>
+        <CookieManager guiclass="CookiePanel" testclass="CookieManager" testname="HTTP Cookie Manager" enabled="true">
+          <collectionProp name="CookieManager.cookies">
+            <elementProp name="cookie" elementType="Cookie" testname="cookie">
+              <stringProp name="Cookie.value">__qca=P0-1187820277-1504862993270; G_ENABLED_IDPS=google; _wpndash=9f71fcfe5b0b03ee5751e2ba; __ssid=d3a414e0-2ba7-4867-b2f8-7b1ea18954c3; _ym_uid=1505811048387258240; _ym_isad=2; wordpress_eli=1; wordpress_test_cookie=WP+Cookie+check; wordpress_logged_in=janeyzhou%7C1602928695%7C0On9f8CevDXBcuPqpRElF4u8P26cLNJox9l1oiEWMao%7Cf9fcbba784a28efb6878957c203372779936c2041efd72c044672fc0aa482f0b; wp_api_sec=janeyzhou%7C1602928695%7C0On9f8CevDXBcuPqpRElF4u8P26cLNJox9l1oiEWMao%7C08406e9eaf4133d9467ac0e36e0e55939d92f9f9d3162aef46792d38a8b47d7a; tk_tc=1508320697330; _ga=GA1.2.1339292131.1504862992; _gid=GA1.2.546058623.1508318317; wpc_wpc=account=janeyzhou&amp;avatar=https%3A%2F%2F2.gravatar.com%2Favatar%2F89c894bbf61f508fe145f3af83986ba3%3Fs%3D25%26amp%3Bd%3Dhttps%253A%252F%252Fs2.wp.com%252Fwp-content%252Fmu-plugins%252Fhighlander-comments%252Fimages%252Fwplogo.png&amp;email=wuyinhu0311%40163.com&amp;link=http%3A%2F%2Fresttestdotblog.wordpress.com&amp;name=janeyzhou&amp;uid=127559744&amp;access_token=3c64c6abb5ca0a19da3ed53461caa291188b0364; _gat=1; tk_qs=context%3Dpublish%26environment%3Dproduction%26site_count%3D1%26site_id_label%3Dwpcom%26client%3Dbrowser%26blog_id%3D135349986%26blog_lang%3Dundefined%26site_plan_id%3D1%26site_post_count%3Dundefined%26_en%3Dcalypso_editor_confirmation_sidebar_close%26_ui%3D127559744%26_ut%3Dwpcom%253Auser_id%26_ul%3Djaneyzhou%26_ts%3D1508379848338%26_tz%3D-8%26_lg%3Dzh-CN%26_pf%3DWin32%26_ht%3D1080%26_wd%3D1920%26_sx%3D0%26_sy%3D0%26_dl%3Dhttps%253A%252F%252Fwordpress.com%252Fpage%252Fresttestdotblog.wordpress.com%252F196%26_dr%3Dhttps%253A%252F%252Fwordpress.com%252F%20post_id%3D196%26post_type%3Dpage%26visibility%3Dpublic%26current_status%3Ddraft%26next_status%3Dpublish%26context%3Dconfirmation_sidebar%26environment%3Dproduction%26site_count%3D1%26site_id_label%3Dwpcom%26client%3Dbrowser%26blog_id%3D135349986%26blog_lang%3Dundefined%26site_plan_id%3D1%26site_post_count%3Dundefined%26_en%3Dcalypso_editor_page_publish%26_ui%3D127559744%26_ut%3Dwpcom%253Auser_id%26_ul%3Djaneyzhou%26_ts%3D1508379848344%26_tz%3D-8%26_lg%3Dzh-CN%26_pf%3DWin32%26_ht%3D1080%26_wd%3D1920%26_sx%3D0%26_sy%3D0%26_dl%3Dhttps%253A%252F%252Fwordpress.com%252Fpage%252Fresttestdotblog.wordpress.com%252F196%26_dr%3Dhttps%253A%252F%252Fwordpress.com%252F</stringProp>
+              <stringProp name="Cookie.domain">public-api.wordpress.com</stringProp>
+              <stringProp name="Cookie.path"></stringProp>
+              <boolProp name="Cookie.secure">true</boolProp>
+              <longProp name="Cookie.expires">0</longProp>
+              <boolProp name="Cookie.path_specified">true</boolProp>
+              <boolProp name="Cookie.domain_specified">true</boolProp>
+            </elementProp>
+          </collectionProp>
+          <boolProp name="CookieManager.clearEachIteration">false</boolProp>
+        </CookieManager>
+        <hashTree/>
+        <CacheManager guiclass="CacheManagerGui" testclass="CacheManager" testname="HTTP Cache Manager" enabled="false">
+          <boolProp name="clearEachIteration">false</boolProp>
+          <boolProp name="useExpires">false</boolProp>
+        </CacheManager>
+        <hashTree/>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Update Site Page - CSVRead" enabled="false">
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">title=${__CSVRead(C:\Users\Janey_Zhou\Desktop\Training\auto\API TEST\2017NovemberJmeterCase\REST.dat,0)}&amp;content=22</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain"></stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol"></stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">/rest/v1.2/sites/135349986/posts/218?http_envelope=1&amp;context=edit</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree/>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Update Site Page - CSV Data Set Config" enabled="false">
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">title=${title}&amp;content=${content}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain"></stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol"></stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">/rest/v1.2/sites/135349986/posts/218?http_envelope=1&amp;context=edit</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config" enabled="true">
+            <stringProp name="delimiter">,</stringProp>
+            <stringProp name="fileEncoding">UTF-8</stringProp>
+            <stringProp name="filename">C:\Users\Janey_Zhou\Desktop\Training\auto\API TEST\2017NovemberJmeterCase\REST.dat</stringProp>
+            <boolProp name="ignoreFirstLine">false</boolProp>
+            <boolProp name="quotedData">false</boolProp>
+            <boolProp name="recycle">true</boolProp>
+            <stringProp name="shareMode">shareMode.all</stringProp>
+            <boolProp name="stopThread">false</boolProp>
+            <stringProp name="variableNames">title,content</stringProp>
+          </CSVDataSet>
+          <hashTree/>
+        </hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Update Site Page - User Variables" enabled="false">
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">title=${title}&amp;content=${content}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain"></stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol"></stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">/rest/v1.2/sites/135349986/posts/218?http_envelope=1&amp;context=edit</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <UserParameters guiclass="UserParametersGui" testclass="UserParameters" testname="User Parameters" enabled="true">
+            <collectionProp name="UserParameters.names">
+              <stringProp name="110371416">title</stringProp>
+              <stringProp name="951530617">content</stringProp>
+            </collectionProp>
+            <collectionProp name="UserParameters.thread_values">
+              <collectionProp name="-981595971">
+                <stringProp name="302720930">User Parameters - REST API</stringProp>
+                <stringProp name="-1133197203">User Parameters - My first case for REST api test</stringProp>
+              </collectionProp>
+            </collectionProp>
+            <boolProp name="UserParameters.per_iteration">false</boolProp>
+          </UserParameters>
+          <hashTree/>
+        </hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Update Site Page - User Defined Variables" enabled="true">
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">title=${title}&amp;content=${content}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain"></stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol"></stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">/rest/v1.2/sites/135349986/posts/218?http_envelope=1&amp;context=edit</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <Arguments guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="title" elementType="Argument">
+                <stringProp name="Argument.name">title</stringProp>
+                <stringProp name="Argument.value">User Defined Variables - REST API TEST</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+              <elementProp name="content" elementType="Argument">
+                <stringProp name="Argument.name">content</stringProp>
+                <stringProp name="Argument.value">User Defined Variables - My First rest api test</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </Arguments>
+          <hashTree/>
+        </hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Get Latest Published List" enabled="true">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+            <collectionProp name="Arguments.arguments"/>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain"></stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol"></stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">/rest/v1.1/sites/135349986/posts?http_envelope=1&amp;page=1&amp;number=20&amp;search=&amp;status=publish%2Cprivate&amp;type=page</stringProp>
+          <stringProp name="HTTPSampler.method">GET</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree/>
+        <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
+          <boolProp name="ResultCollector.error_logging">false</boolProp>
+          <objProp>
+            <name>saveConfig</name>
+            <value class="SampleSaveConfiguration">
+              <time>true</time>
+              <latency>true</latency>
+              <timestamp>true</timestamp>
+              <success>true</success>
+              <label>true</label>
+              <code>true</code>
+              <message>true</message>
+              <threadName>true</threadName>
+              <dataType>true</dataType>
+              <encoding>false</encoding>
+              <assertions>true</assertions>
+              <subresults>true</subresults>
+              <responseData>false</responseData>
+              <samplerData>false</samplerData>
+              <xml>false</xml>
+              <fieldNames>true</fieldNames>
+              <responseHeaders>false</responseHeaders>
+              <requestHeaders>false</requestHeaders>
+              <responseDataOnError>false</responseDataOnError>
+              <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+              <assertionsResultsToSave>0</assertionsResultsToSave>
+              <bytes>true</bytes>
+              <sentBytes>true</sentBytes>
+              <threadCounts>true</threadCounts>
+              <idleTime>true</idleTime>
+              <connectTime>true</connectTime>
+            </value>
+          </objProp>
+          <stringProp name="filename"></stringProp>
+        </ResultCollector>
+        <hashTree/>
+        <CounterConfig guiclass="CounterConfigGui" testclass="CounterConfig" testname="Counter" enabled="true">
+          <stringProp name="CounterConfig.start"></stringProp>
+          <stringProp name="CounterConfig.end"></stringProp>
+          <stringProp name="CounterConfig.incr"></stringProp>
+          <stringProp name="CounterConfig.name"></stringProp>
+          <stringProp name="CounterConfig.format"></stringProp>
+          <boolProp name="CounterConfig.per_user">false</boolProp>
+        </CounterConfig>
+        <hashTree/>
+      </hashTree>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Logic Controller" enabled="true">
+        <stringProp name="TestPlan.comments">Only Impact the sub elements</stringProp>
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+          <stringProp name="LoopController.loops">1</stringProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.num_threads">1</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">1</stringProp>
+        <longProp name="ThreadGroup.start_time">1510824246000</longProp>
+        <longProp name="ThreadGroup.end_time">1510824246000</longProp>
+        <boolProp name="ThreadGroup.scheduler">false</boolProp>
+        <stringProp name="ThreadGroup.duration"></stringProp>
+        <stringProp name="ThreadGroup.delay"></stringProp>
+      </ThreadGroup>
+      <hashTree/>
+    </hashTree>
+    <WorkBench guiclass="WorkBenchGui" testclass="WorkBench" testname="WorkBench" enabled="true">
+      <boolProp name="WorkBench.save">true</boolProp>
+    </WorkBench>
+    <hashTree/>
+  </hashTree>
+</jmeterTestPlan>
