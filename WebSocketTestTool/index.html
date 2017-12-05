@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<!-- saved from url=(0033)https://c.runoob.com/front-end/61 -->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <title>Websocket Test</title>
+  </head>
+  <body>
+    <style type="text/css">
+      .title {background-color: #3C3C3C; color: #FFFFFF;}
+      .label {font-size: 16px; font-weight: bold; width: 70px;display: inline-block; margin-left: 20px}
+      .input {line-height: 25px; font-size: 16px; margin-left: 10px; padding-left: 5px; width: 500px; text-overflow: ellipsis}
+      .div {margin-top: 20px; margin-bottom: 20px}
+      .button {margin-left: 50px; font-size: 16px; font-weight: bold; color: #696969 }
+      
+    </style>
+    
+    <h1 class="title">
+      Websocket Test Client
+    </h1>
+    
+    <h2>
+      Send Request
+    </h2>
+    <form>
+      <div class="div">
+        <label class="label">WSSURL:</label>
+        <input id="WSSURL" name="WSSURL" type="text" class="input">
+      </div>
+      <div class="div">
+        <label class="label">Event:</label>
+        <input id="eventType" name="eventType" type="text" class="input">
+      </div>
+      <div class="div">
+        <input class="button" id="connect" onclick="tryToConnect()" type="button" value="Connect">
+        <input class="button" id="send" onclick="tryToSend()" type="button" value="Send">
+        <input class="button" id="disconnect" onclick="tryToDisconnect()" type="button" value="Disconnect">
+        <input class="button" id="clear" onclick="tryToClearScreen()" type="button" value="Clear Screen">
+		<input class="button" id="test" onclick="tryToTest()" type="button" value="test">
+      </div>
+	  
+    </form>
+    
+    <hr>
+    
+    <h2>
+      Show Response
+    </h2>
+    <div id="output"></div>
+	
+	<script src="websocket.js">	</script>
+  
+</body>
+</html>

@@ -1,0 +1,3 @@
+url: wss://real.okcoin.cn:10440/websocket/okcoinapi
+sub: {'event':'addChannel','channel':'ok_sub_spotcny_btc_kline_1min'}
+remove: {'event':'removeChannel','channel':'ok_sub_spotcny_btc_kline_1min'}
